@@ -1,68 +1,219 @@
+/* Główne kontener */
 .todoAppContainer {
-    padding: 20px;
+    padding: 30px;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    background-color: #f9f9f9; /* Subtelne tło */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Delikatny cień */
 }
 
-.addTaskButton {
-    margin: 0 0 20px 0;
-    padding: 10px 20px;
+/* Przycisk Dodaj Dział */
+/* Kontener dla przycisku "Dodaj dział" */
+.addRow {
+    display: flex;
+    justify-content: flex-start; /* Przycisk wyrównany do lewej */
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Przycisk "Dodaj dział" */
+.addRowButton {
+    padding: 10px 25px;
     font-size: 1rem;
+    font-weight: bold;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.addRowButton:hover {
+    background-color: #0056b3;
+}
+/* Nagłówek działu */
+.rowHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Elementy są ustawione od lewej */
+    gap: 10px; /* Odstęp między przyciskiem a tytułem */
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd; /* Oddzielenie sekcji */
+}
+
+/* Nagłówek kategorii */
+.rowTitle {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Przycisk dodawania zadania */
+.addTaskButton {
+    font-size: 1rem;
+    padding: 8px 15px;
+    background-color: #28a745; /* Zielony kolor */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .addTaskButton:hover {
+    background-color: #218838; /* Ciemniejszy zielony */
+}
+
+/* Kolumny */
+.rowColumns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.column:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.column h3 {
+    margin: 0 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Zadania */
+.taskGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.task {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    background-color: #007bff;
+}
+
+.task:hover {
     background-color: #0056b3;
 }
 
+.taskHeader {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    text-align: right;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.taskText {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: white;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.taskOwner {
+    font-size: 0.8rem;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Popup Overlay */
 .popupOverlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6); /* Ciemniejsze tło */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
+/* Popup Box */
 .popup {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
     text-align: center;
-    width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.4s ease-in-out;
 }
 
 .popup h3 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
 }
 
 .input, .select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus, .select:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 .saveButton, .cancelButton {
-    padding: 10px 20px;
+    padding: 12px 20px;
     margin: 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .saveButton {
@@ -83,120 +234,23 @@
     background-color: #d32f2f;
 }
 
-.todoApp {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+/* Animacje */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.column {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 30%;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.column h3 {
-    margin: 0 0 10px;
-    color: #333;
-}
-
-/* Zadania w gridzie */
-.taskGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Max 3 kolumny */
-    gap: 10px;
-}
-
-.task {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s ease;
-}
-
-.task:hover {
-    background-color: #0056b3;
-}
-
-.assigneeLabel {
-    margin-top: 5px;
-    font-size: 0.9rem;
-    color: #fff;
-}
-
-/* Zadania w gridzie */
-.taskGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Max 3 kolumny */
-    gap: 10px;
-}
-
-.task {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Tekst zadania wyrównany do góry */
-    padding: 5px; /* Mniejszy padding dla więcej przestrzeni */
-    border-radius: 5px;
-    color: white;
-    text-align: left; /* Tekst wyrównany do lewej */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s ease;
-    position: relative;
-    overflow: hidden; /* Zapobiega wychodzeniu elementów poza kafelek */
-}
-
-.task:hover {
-    background-color: #0056b3;
-}
-
-/* Nagłówek z numerem zadania */
-.taskHeader {
-    width: 100%; /* Rozciągnięcie na całą szerokość */
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px; /* Dodano większy padding dla lepszej widoczności */
-    text-align: right; /* Numer wyrównany do prawej */
-    border-radius: 3px; /* Zaokrąglenie tylko górnych rogów */
-    font-size: 0.6rem;
-    font-weight: bold;
-    color: #ff0000; /* Kolor numeru */
-    box-sizing: border-box; /* Upewnia się, że padding jest uwzględniany w szerokości */
-}
-
-/* Tekst zadania */
-.taskText {
-    flex-grow: 1; /* Wypełnia przestrzeń między headerem a ownerem */
-    font-size: 0.9rem;
-    color: white;
-    display: -webkit-box; /* Ustawienie elementu jako pudełko */
-    -webkit-line-clamp: 2; /* Ograniczenie do 3 linii */
-    -webkit-box-orient: vertical; /* Wymusza układ pionowy */
-    overflow-y: hidden; /* Dodanie przewijania w pionie */
-    word-break: break-word; /* Zawijanie długich słów */
-    line-height: 1.2; /* Odsunięcie linii tekstu */
-    margin: 5px 0;
-    max-height: 70px; /* Maksymalna wysokość sekcji tekstu */
-}
-
-/* Właściciel zadania */
-.taskOwner {
-    font-size: 0.6rem;
-    color: rgba(255, 255, 255, 0.9);
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 2px;
-    border-radius: 5px; /* Zaokrąglenie tylko dolnych rogów */
-    overflow: hidden; /* Zapobiega wychodzeniu elementów */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
