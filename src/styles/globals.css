@@ -1,0 +1,27 @@
+/* styles/global.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Cała wysokość widoku */
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pełna wysokość widoku */
+}
+
+.content {
+    flex: 1; /* Wypełnienie przestrzeni między nagłówkiem a stopką */
+    padding: 20px;
+    background: #f5f5f5; /* Opcjonalne tło */
+}
+
+footer {
+    background-color: #20232a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: auto; /* Wypycha stopkę na dół */
+}

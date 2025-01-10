@@ -1,0 +1,46 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.heading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.postsList {
+    list-style: none;
+    padding: 0;
+}
+
+.postItem {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.postItem h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.postItem p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}

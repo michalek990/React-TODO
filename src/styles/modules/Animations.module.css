@@ -1,0 +1,73 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.heading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Animacje CSS */
+.animatedBox {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #007bff;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+/* React Spring */
+.springBox {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #ff6347;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Framer Motion */
+.motionBox {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #9acd32;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
