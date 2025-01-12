@@ -1,4 +1,4 @@
-name: Deploy to GitHub
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -8,52 +8,47 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-    # 1. Checkout kodu
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    # 2. Ustawienie Node.js
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-    # 3. Cache zależności
-    - name: Cache node_modules
-      uses: actions/cache@v3
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-modules-
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
 
-    # 4. Instalacja zależności
-    - name: Install dependencies
-      run: npm install --legacy-peer-deps
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
 
-    # 5. Budowanie aplikacji
-    - name: Build the project
-      run: npm run build
+      - name: Build the project
+        run: npm run build
 
-    # 6. Wdrożenie na GitHub Pages
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
-        force_orphan: true
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          force_orphan: true
 
-    # 7. Wysyłanie powiadomienia e-mail
-    - name: Send mail
-      uses: dawidd6/action-send-mail@v4
-      with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: Github Actions job result
-          from: ${{ secrets.EMAIL_USERNAME }}
-          to: michal.grzeszuk.dodat@gmail.com
-          html_body: file://README.html
+      - name: Send mail
+        uses: dawidd6/action-send-mail@v4
+        with:
+            server_address: smtp.gmail.com
+            server_port: 465
+            username: ${{ secrets.EMAIL_USERNAME }}
+            password: ${{ secrets.EMAIL_PASSWORD }}
+            subject: Github Actions job result
+            from: ${{ secrets.EMAIL_USERNAME }}
+            to: michal.grzeszuk.dodat@gmail.com
+            html_body: file://README.html
