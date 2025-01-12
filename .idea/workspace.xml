@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bde8a7e8-36b8-4ca9-bb6f-ce3e17dee140" name="Changes" comment="a">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <updated>1736528216922</updated>
       <workItem from="1736528217947" duration="5215000" />
       <workItem from="1736548017905" duration="5312000" />
-      <workItem from="1736636675242" duration="5233000" />
+      <workItem from="1736636675242" duration="5540000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
