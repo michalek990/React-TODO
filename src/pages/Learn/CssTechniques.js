@@ -1,4 +1,4 @@
-import styles from '../styles/modules/CssTechniques.module.css';
+import styles from '../../styles/modules/Learn/CssTechniques.module.css';
 
 function CssTechniques() {
     return (
@@ -128,72 +128,6 @@ function CssTechniques() {
                     </tr>
                     </tbody>
                 </table>
-            </section>
-
-            {/* Flexbox */}
-            <section>
-                <h2>Flexbox</h2>
-                <div className={styles.flexbox}>
-                    <div>Element 1</div>
-                    <div>Element 2</div>
-                    <div>Element 3</div>
-                </div>
-            </section>
-
-            {/* Grid */}
-            <section>
-                <h2>Grid</h2>
-                <div className={styles.grid}>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                </div>
-            </section>
-
-            {/* Animacje */}
-            <section>
-                <h2>Animacje</h2>
-                <div className={styles.animatedText}>To jest animowany tekst</div>
-            </section>
-
-            {/* Transformacje */}
-            <section>
-                <h2>Transformacje</h2>
-                <div className={styles.transformExample}>Najedź na mnie!</div>
-            </section>
-
-            {/* Gradienty i cienie */}
-            <section>
-                <h2>Gradienty i cienie</h2>
-                <div className={styles.gradientBox}>Gradient z cieniem</div>
-            </section>
-
-            {/* Responsywność */}
-            <section>
-                <h2>Responsywność</h2>
-                <div className={styles.responsiveExample}>
-                    Zmniejsz okno przeglądarki, aby zobaczyć efekt!
-                </div>
-            </section>
-
-            {/* Maskowanie i Clip-path */}
-            <section>
-                <h2>Maskowanie i Clip-path</h2>
-                <div className={styles.maskingExample}>Maskowany tekst</div>
-                <div className={styles.clipPathExample}>Nietypowy kształt</div>
-            </section>
-
-            {/* Filtry CSS */}
-            <section>
-                <h2>Filtry CSS</h2>
-                <img
-                    className={styles.filteredImage}
-                    src="https://via.placeholder.com/300"
-                    alt="Przykład filtra"
-                />
             </section>
         </div>
     );

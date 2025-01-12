@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDrop } from 'react-dnd';
 import Task from './Task';
-import styles from '../styles/modules/TODO/TODO.module.css';
+import styles from '../../styles/modules/TODO/TODO.module.css';
 
 function Column({ title, tasks = [], column, rowIndex, moveTask, onTaskClick }) {
     const [, drop] = useDrop({

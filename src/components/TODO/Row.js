@@ -1,6 +1,6 @@
 import React from 'react';
 import Column from './Column';
-import styles from '../styles/modules/TODO/TODO.module.css';
+import styles from '../../styles/modules/TODO/TODO.module.css';
 
 function Row({ category, tasks, rowIndex, moveTask, onTaskClick, onAddTask }) {
     return (
