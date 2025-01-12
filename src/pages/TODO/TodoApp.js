@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import Row from '../../components/Row';
+import Row from '../../components/TODO/Row';
 import styles from '../../styles/modules/TODO/TODO.module.css';
 
 function TodoApp() {

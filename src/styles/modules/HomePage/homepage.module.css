@@ -1,0 +1,392 @@
+/* Global Section Styles */
+.section {
+    padding: 60px 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 300px 20px; /* Duże granatowe pole */
+    background-color: #090a2a; /* Granatowe tło */
+    color: white;
+}
+
+.heroTitle {
+    font-size: 8rem; /* Duży, wyrazisty tytuł */
+    font-weight: bold;
+    margin: 0 0 30px; /* Większy odstęp od podtytułu */
+    line-height: 1.2;
+    background: linear-gradient(90deg, #ff7eb3, #8340ff); /* Gradientowy efekt */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.hashtag {
+    background: linear-gradient(90deg, #8340ff, #ff7eb3); /* Gradient dla hashtagu */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem; /* Powiększenie hashtagu */
+    font-weight: bold;
+}
+
+.heroSubtitle {
+    font-size: 2.2rem; /* Większy rozmiar podtytułu */
+    line-height: 2; /* Większe odstępy między liniami */
+    max-width: 850px; /* Zwiększona szerokość dla długiego tekstu */
+    margin: 0 auto 40px;
+    color: #d1d1e9; /* Subtelniejszy odcień bieli */
+}
+
+.heroButtons {
+    margin-top: 50px; /* Większy odstęp od podtytułu */
+}
+
+.getStarted {
+    padding: 20px 50px; /* Większy przycisk */
+    font-size: 1.8rem; /* Powiększony tekst przycisku */
+    border-radius: 35px; /* Bardziej zaokrąglone rogi */
+    background-color: #8340ff; /* Gradientowy efekt */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.getStarted:hover {
+    background-color: #6c2ecc; /* Mocniejszy kolor na hover */
+    transform: scale(1.05); /* Subtelne powiększenie na hover */
+}
+
+.noCredit {
+    margin-top: 20px; /* Większy odstęp od przycisków */
+    font-size: 1.2rem; /* Większy tekst */
+    color: #d1d1e9;
+}
+
+
+/* Features Section */
+/* Features Section */
+.features {
+    background-color: #141547; /* Dark background */
+    color: white; /* Light text */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Bright white for the title */
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: inline-block;
+    width: 350px; /* Zwiększona szerokość */
+    height: 250px; /* Zwiększona wysokość */
+    padding: 30px; /* Większy padding dla treści */
+    margin: 20px; /* Większy margines między kafelkami */
+    background-color: #1e1e5b; /* Slightly lighter dark background for cards */
+    border-radius: 15px; /* Bardziej zaokrąglone rogi */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Wyraźniejszy cień */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px); /* Większy efekt unoszenia */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Mocniejszy cień na hover */
+}
+
+.featureIcon {
+    font-size: 3rem; /* Większa ikona */
+    color: #8340ff; /* Vibrant purple icon color */
+    margin-bottom: 20px; /* Większy odstęp od tytułu */
+}
+
+.feature h3 {
+    font-size: 1.8rem; /* Większy tytuł */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.feature p {
+    font-size: 1.2rem; /* Większy tekst opisu */
+    color: #d1d1e9; /* Softer white for text */
+    line-height: 1.8; /* Większe odstępy między liniami */
+}
+
+@media (max-width: 768px) {
+    .feature {
+        width: 90%; /* Zmniejszona szerokość na mniejszych ekranach */
+        height: auto; /* Dynamiczna wysokość */
+        padding: 20px; /* Mniejszy padding na małych ekranach */
+    }
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 20px;
+    background-color: #141547; /* Dark background */
+    color: white; /* Light text */
+}
+
+.aboutContent {
+    max-width: 500px;
+    text-align: left;
+}
+
+.aboutContent h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff; /* Bright white title */
+}
+
+.aboutContent p {
+    font-size: 1rem;
+    color: #d1d1e9; /* Softer white for text */
+    line-height: 1.6;
+}
+
+.aboutImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutImage {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    animation: float 3s ease-in-out infinite; /* Dodajemy animację */
+}
+
+.aboutImage:hover {
+    transform: scale(1.05); /* Powiększenie na hover */
+}
+
+/* Definicja animacji "latania" */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Początkowe i końcowe położenie */
+    }
+    50% {
+        transform: translateY(-10px); /* Ruch w górę */
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutImage {
+        max-width: 100%; /* Adjust image size for smaller screens */
+    }
+}
+
+/* Global Styling */
+.homepage {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #090a2a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #141547;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+    color: #a29bfe;
+}
+
+.navActions {
+    display: flex;
+    gap: 10px;
+}
+
+.signIn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signIn:hover {
+    background-color: white;
+    color: #141547;
+}
+
+.getStarted {
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    background: linear-gradient(90deg, #ff7eb3, #8340ff); /* Gradient effect */
+}
+
+.getStarted:hover {
+    background-color: #6c2ecc;
+}
+
+/* Global Styling */
+.homepage {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #090a2a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #141547;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+    color: #a29bfe;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    background-color: #090a2a;
+    color: white;
+}
+
+.heroTitle {
+    font-size: 6rem; /* Increased font size */
+    font-weight: bold;
+    margin: 0 0 20px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #ff7eb3, #8340ff); /* Gradient effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.hashtag {
+    background: linear-gradient(90deg, #8340ff, #ff7eb3); /* Gradient for the hashtag */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heroSubtitle {
+    font-size: 1.5rem; /* Slightly larger subtitle */
+    line-height: 1.8;
+    max-width: 700px; /* Increased max width */
+    margin: 0 auto 30px;
+    color: #d1d1e9;
+}
+
+.heroButtons {
+    margin-top: 30px;
+}
+
+.getStarted {
+    padding: 15px 30px; /* Larger button */
+    font-size: 1.2rem; /* Increased font size */
+    border-radius: 30px;
+    background-color: #8340ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.getStarted:hover {
+    background-color: #6c2ecc;
+}
+
+.noCredit {
+    margin-top: 15px;
+    font-size: 1rem; /* Increased font size for better readability */
+    color: #d1d1e9;
+}

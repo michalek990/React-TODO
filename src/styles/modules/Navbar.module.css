@@ -1,30 +1,227 @@
+/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #282c34;
-    padding: 10px 20px;
+    padding: 20px 50px;
+    background-color: #141547;
     color: white;
+    font-family: 'Poppins', Arial, sans-serif; /* Użyj nowej czcionki */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Styl dla kontenera logo */
+.logoContainer {
+    display: flex;
+    align-items: center; /* Wyrównanie w pionie */
+    gap: 10px; /* Odstęp między obrazem a tekstem */
+}
+
+/* Styl dla logo */
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    width: 40px; /* Dostosuj rozmiar logo */
+    height: 40px;
+    object-fit: contain; /* Zachowaj proporcje logo */
+}
+
+/* Styl dla tekstu logo */
+.logoText {
+    font-size: 1.2rem; /* Powiększony tekst */
+    font-weight: bold; /* Pogrubienie */
+    color: white; /* Kolor tekstu */
+    font-family: 'Poppins', Arial, sans-serif; /* Nowoczesna czcionka */
 }
 
 .navLinks {
-    display: flex;
-    gap: 15px;
     list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .navLinks li a {
-    color: white;
     text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
+    color: white;
+    font-weight: 500; /* Średnie pogrubienie */
+    font-size: 1.1rem; /* Zwiększenie rozmiaru czcionki */
+    transition: color 0.3s ease;
 }
 
 .navLinks li a:hover {
-    color: #61dafb;
+    color: #a29bfe; /* Gradientowy efekt */
+}
+
+.navActions {
+    display: flex;
+    gap: 10px;
+}
+
+.signIn {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signIn:hover {
+    background-color: white;
+    color: #141547;
+}
+
+.getStarted {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    background: linear-gradient(90deg, #ff7eb3, #8340ff); /* Gradient */
+}
+
+.getStarted:hover {
+    background-color: #6c2ecc;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdownTrigger {
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.dropdownTrigger:hover {
+    color: #a29bfe;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e1e5b;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.dropdownMenu li {
+    padding: 10px 20px;
+}
+
+.dropdownMenu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdownMenu li a:hover {
+    background-color: #8340ff;
+    color: white;
+}
+
+/* Button Actions */
+.navActions {
+    display: flex;
+    gap: 15px;
+}
+
+.signIn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8340ff;
+    border: 2px solid #8340ff;
+    border-radius: 25px;
+    background: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.signIn:hover {
+    background-color: #8340ff;
+    color: white;
+}
+
+.getStarted {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff7eb3, #8340ff);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.getStarted:hover {
+    background: linear-gradient(90deg, #8340ff, #ff7eb3);
+}
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdownTrigger {
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.dropdownTrigger:hover {
+    color: #a29bfe;
+}
+
+/* Dropdown Animation */
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e1e5b;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Prevent interaction when hidden */
+    z-index: 100;
+}
+
+.dropdownMenu.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* Enable interaction when visible */
+}
+
+.dropdownMenu li {
+    padding: 10px 20px;
+}
+
+.dropdownMenu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdownMenu li a:hover {
+    background-color: #8340ff;
+    color: white;
 }

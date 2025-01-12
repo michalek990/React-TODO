@@ -1,16 +1,129 @@
+/* Importujemy czcionkę Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 .footer {
-    background-color: #20232a;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
+    background-color: #1e1e5b; /* Niebieskie tło */
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: 'Poppins', Arial, sans-serif; /* Użycie nowej czcionki */
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Odstępy między logo a tekstem */
+    text-align: left; /* Wyrównanie tekstu do lewej */
+    font-family: 'Poppins', Arial, sans-serif; /* Nowoczesna czcionka */
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.logoSection p {
+    font-size: 0.9rem; /* Mniejszy, bardziej elegancki tekst */
+    color: #d1d5db; /* Subtelny szary kolor */
+    line-height: 1.6; /* Większe odstępy między liniami */
+}
+
+.contact {
     font-size: 0.9rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff; /* Jasny kolor dla kontaktu */
+    font-weight: 500; /* Lekko pogrubiony tekst */
 }
 
-.footer a {
-    color: #61dafb;
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.linkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left; /* Wyrównanie do lewej */
+}
+
+.linkGroup h4 {
+    font-size: 1.1rem;
+    font-weight: 600; /* Grubszy tekst nagłówka */
+    margin-bottom: 10px;
+    color: #f0f4fc;
+}
+
+.linkGroup a {
+    font-size: 0.9rem;
+    font-weight: 400; /* Lekki tekst linków */
+    color: #e0e7ff;
     text-decoration: none;
+    transition: color 0.3s ease;
+    line-height: 1.6; /* Dodanie odstępów między linkami */
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.linkGroup a:hover {
+    color: #ffffff;
+}
+
+.socials {
+    text-align: left; /* Wyrównanie do lewej */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Odstępy między elementami */
+}
+
+.socials h4 {
+    font-size: 1.1rem;
+    font-weight: 600; /* Grubszy tekst nagłówka */
+    color: #f0f4fc;
+    margin-bottom: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: flex-start; /* Wyrównanie do lewej */
+    gap: 15px; /* Odstępy między ikonami */
+    margin: 10px 0;
+}
+
+.icon {
+    width: 40px; /* Rozmiar okręgu */
+    height: 40px;
+    border: 2px solid #ffffff; /* Biała obwódka */
+    border-radius: 50%; /* Okrągły kształt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; /* Rozmiar ikony */
+    color: #ffffff; /* Kolor ikony */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Płynna animacja */
+}
+
+.icon:hover {
+    background-color: #ffffff; /* Tło przy hover */
+    color: #3b82f6; /* Zmiana koloru ikony */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodanie cienia */
+}
+
+
+.footer p {
+    font-size: 0.9rem;
+    color: #d1d5db;
+    line-height: 1.6; /* Odsunięcie między liniami tekstu */
 }

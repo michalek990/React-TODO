@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDrag } from 'react-dnd';
-import styles from '../styles/modules/TODO/TODO.module.css';
-import { assigneeColors } from '../pages/TODO/constants';
+import styles from '../../styles/modules/TODO/TODO.module.css';
+import { assigneeColors } from '../../pages/TODO/constants';
 
 const ItemTypes = {
     TASK: 'task',

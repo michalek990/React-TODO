@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../styles/modules/ApiData.module.css';
+import styles from '../../styles/modules/Learn/ApiData.module.css';
 
 function ApiData() {
     const [posts, setPosts] = useState([]);
