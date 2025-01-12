@@ -14,7 +14,7 @@ function App() {
             <div className="app-wrapper">
                 <Navbar />
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/home" element={<Home />} />
                         <Route path="/css" element={<CssTechniques />} />
                         <Route path="/hooks" element={<ReactHooks />} />
                         <Route path="/api" element={<ApiData />} />
