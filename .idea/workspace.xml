@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bde8a7e8-36b8-4ca9-bb6f-ce3e17dee140" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Home/AboutSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/FeaturesSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/HeroSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/assets/heroImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/assets/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Column.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TODO/Column.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TODO/Row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TODO/Task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Animations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ApiData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Learn/ApiData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CssTechniques.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Learn/CssTechniques.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Optimization.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ReactHooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Learn/ReactHooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TODO/TodoApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TODO/TodoApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Testing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/HomePage/homepage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/Animations.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/ApiData.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/Learn/ApiData.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/CssTechniques.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/Learn/CssTechniques.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/Footer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/Optimization.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/ReactHooks.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/Learn/ReactHooks.module.css" afterDir="false" />
-    </list>
+    <list default="true" id="bde8a7e8-36b8-4ca9-bb6f-ce3e17dee140" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feature/home-page",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "C:/Users/Michal/Desktop/test/test/src/components/Home",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -103,7 +72,7 @@
       <updated>1736528216922</updated>
       <workItem from="1736528217947" duration="5215000" />
       <workItem from="1736548017905" duration="5312000" />
-      <workItem from="1736636675242" duration="3331000" />
+      <workItem from="1736636675242" duration="3972000" />
     </task>
     <servers />
   </component>
