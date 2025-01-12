@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useReducer } from 'react';
-import styles from '../styles/modules/ReactHooks.module.css';
+import styles from '../../styles/modules/Learn/ReactHooks.module.css';
 
 function ReactHooks() {
     const [count, setCount] = useState(0);
