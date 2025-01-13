@@ -1,0 +1,250 @@
+.pricing {
+    min-height: 100vh; /* Pełna wysokość okna */
+    background: linear-gradient(135deg, #f3e7fe, #d4d1f5); /* Gradientowe tło */
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Użycie nowoczesnej czcionki */
+    color: #333;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4b3f6b; /* Delikatny fioletowy odcień */
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #6e5d89;
+    margin-bottom: 50px;
+}
+
+.planToggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #f4f4f8; /* Tło przełącznika */
+    padding: 10px;
+    border-radius: 25px;
+    margin: 20px auto 40px;
+    width: fit-content;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6e5d89;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle:hover {
+    background-color: #e0dff9;
+}
+
+.toggle.active {
+    background: linear-gradient(135deg, #8340ff, #ff7eb3); /* Gradient aktywnej opcji */
+    color: white;
+    box-shadow: 0 2px 5px rgba(131, 64, 255, 0.3);
+}
+
+
+.planContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.planCard {
+    background: white;
+    border-radius: 15px; /* Zaokrąglenie kart */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+    padding: 30px;
+    text-align: left;
+    width: 350px; /* Większe karty */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+.planCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.highlighted {
+    background: linear-gradient(135deg, #6c40ff, #8340ff); /* Gradient na karcie wyróżnionej */
+    color: white;
+    box-shadow: 0 10px 30px rgba(108, 64, 255, 0.5);
+}
+
+.highlighted h3,
+.highlighted p,
+.highlighted .planFeatures,
+.highlighted .planButton {
+    color: white;
+}
+
+.planTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.planPrice {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #4b3f6b;
+}
+
+.planFeatures {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    font-size: 1.2rem;
+    color: #6e5d89;
+}
+
+.feature {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.feature::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #6c40ff;
+    font-size: 1rem;
+}
+
+.planButton {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.freeButton {
+    background-color: #007bff;
+    color: white;
+}
+
+.proButton {
+    background-color: #6c40ff;
+    color: white;
+}
+
+.scalerButton {
+    background-color: black;
+    color: white;
+}
+
+.planButton:hover {
+    transform: scale(1.05);
+}
+.featuresComparison {
+    margin-top: 50px;
+    padding: 40px 20px;
+    background-color: #f9f9fb; /* Jasne tło */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1250px; /* Szerokość dopasowana do kafelków w "Plans & Pricing" */
+    margin-left: auto;
+    margin-right: auto; /* Wyśrodkowanie komponentu */
+    font-family: 'Arial', sans-serif;
+}
+
+.featuresComparison .subtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.featuresComparison .comparisonTable {
+    display: grid;
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 100%; /* Dopasowanie szerokości do komponentu */
+    padding: 15px;
+    background-color: #ffffff; /* Białe tło tabeli */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featuresComparison .row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* Podział na funkcje i 3 kolumny dla planów */
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e5e5e5; /* Linia między wierszami */
+    width: 100%; /* Ustawienie pełnej szerokości */
+    box-sizing: border-box; /* Uwzględnienie paddingu w szerokości */
+}
+
+.featuresComparison .row:last-child {
+    border-bottom: none; /* Usuń linię pod ostatnim wierszem */
+}
+
+.featuresComparison .feature {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.featuresComparison .check {
+    text-align: center;
+    font-size: 1rem;
+    color: #4caf50; /* Zielony kolor dla ✔ */
+}
+
+.featuresComparison .check:nth-child(odd) {
+    color: #ff5252; /* Czerwony kolor dla ✘ */
+}
+
+/* Efekt hover dla wierszy */
+.featuresComparison .row:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.01);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Dostosowanie dla małych ekranów */
+@media (max-width: 768px) {
+    .featuresComparison .comparisonTable {
+        grid-template-columns: 1fr; /* Jedna kolumna na małych ekranach */
+    }
+
+    .featuresComparison .row {
+        grid-template-columns: 1fr; /* Wszystkie elementy w jednym wierszu */
+        text-align: center;
+    }
+
+    .featuresComparison .feature {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .featuresComparison .check {
+        text-align: center;
+    }
+}

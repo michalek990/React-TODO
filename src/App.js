@@ -7,6 +7,7 @@ import ReactHooks from './pages/Learn/ReactHooks';
 import ApiData from './pages/Learn/ApiData';
 import './styles/globals.css';
 import TodoApp from "./pages/TODO/TodoApp";
+import Pricing from "./components/Pricing";
 
 function App() {
     return (
@@ -14,7 +15,8 @@ function App() {
             <div className="app-wrapper">
                 <Navbar />
                     <Routes>
-                        <Route path="/home" element={<Home />} />
+                        <Route path="/" element={<Home />} />
+                        <Route path="/pricing" element={<Pricing />} />
                         <Route path="/css" element={<CssTechniques />} />
                         <Route path="/hooks" element={<ReactHooks />} />
                         <Route path="/api" element={<ApiData />} />

@@ -12,14 +12,13 @@ function Navbar() {
 
     return (
         <nav className={styles.navbar}>
-            {/* Sekcja logo z tekstem */}
-            <div className={styles.logoContainer}>
+            <Link to="/" className={styles.logoContainer}>
                 <img src={logo} alt="Logo" className={styles.logo} />
                 <span className={styles.logoText}>React Learning Center</span>
-            </div>
+            </Link>
             <ul className={styles.navLinks}>
                 <li><Link to="/todo">About</Link></li>
-                <li><Link to="/todo">Pricing</Link></li>
+                <li><Link to="/pricing">Pricing</Link></li>
                 <li
                     className={styles.dropdown}
                     onMouseEnter={toggleDropdown}
