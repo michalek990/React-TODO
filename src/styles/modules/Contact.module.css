@@ -1,0 +1,134 @@
+.contactSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background: linear-gradient(135deg, #6c63ff, #d4d1f5); /* Updated background */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensures no scrollbar appears during animation */
+}
+
+.contactContainer {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transform: translateY(-100px); /* Start animation from above */
+    opacity: 0; /* Start hidden */
+    animation: slideDown 1s ease-out forwards; /* Animate to slide down */
+}
+
+.contactLeft {
+    flex: 1;
+    background: linear-gradient(135deg, #141547, #836eff);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contactLeft h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contactLeft p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contactIcon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.contactText {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contactRight {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactRight h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inputField,
+.textareaField {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.inputField:focus,
+.textareaField:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+.submitButton {
+    padding: 15px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #4e54c8;
+}
+
+/* Slide-down animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0; /* Hidden */
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@media (max-width: 768px) {
+    .contactContainer {
+        flex-direction: column;
+    }
+
+    .contactLeft,
+    .contactRight {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+    }
+}

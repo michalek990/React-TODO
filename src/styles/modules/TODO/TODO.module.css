@@ -2,14 +2,13 @@
 .todoAppContainer {
     padding: 30px;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     background-color: #f9f9f9; /* Subtelne tło */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Delikatny cień */
 }
 
-/* Przycisk Dodaj Dział */
-/* Kontener dla przycisku "Dodaj dział" */
 .addRow {
     display: flex;
     justify-content: flex-start; /* Przycisk wyrównany do lewej */
@@ -34,7 +33,7 @@
 .addRowButton:hover {
     background-color: #0056b3;
 }
-/* Nagłówek działu */
+
 .rowHeader {
     display: flex;
     align-items: center;
