@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bde8a7e8-36b8-4ca9-bb6f-ce3e17dee140" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/components/Contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/modules/Contact.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Learn/ApiData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Learn/CssTechniques.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Learn/ReactHooks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/HomePage/homepage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/HomePage/homepage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/Learn/ApiData.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/Learn/CssTechniques.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/Learn/ReactHooks.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/TODO/TODO.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/TODO/TODO.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +81,7 @@
       <workItem from="1736690020275" duration="1983000" />
       <workItem from="1736723687218" duration="595000" />
       <workItem from="1736797304408" duration="3102000" />
-      <workItem from="1736806005737" duration="1300000" />
+      <workItem from="1736806005737" duration="2004000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
