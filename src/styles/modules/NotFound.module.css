@@ -1,0 +1,116 @@
+.notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6c63ff, #141547);
+    color: white;
+    text-align: center;
+}
+
+.glitchWrapper {
+    position: relative;
+    font-size: 10rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.glitchText {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #6c63ff, 0 0 15px #8340ff;
+    animation: glitch 1s infinite;
+}
+
+.glitchText::before,
+.glitchText::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+}
+
+.glitchText::before {
+    left: -2px;
+    text-shadow: -2px 0 #ff00ff;
+    clip: rect(20px, 150px, 90px, 0);
+    animation: glitchBefore 1.5s infinite linear;
+}
+
+.glitchText::after {
+    left: 2px;
+    text-shadow: -2px 0 #00ffff;
+    clip: rect(85px, 150px, 140px, 0);
+    animation: glitchAfter 1.5s infinite linear;
+}
+
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+}
+
+@keyframes glitchBefore {
+    0% {
+        clip: rect(10px, 9999px, 40px, 0);
+    }
+    50% {
+        clip: rect(50px, 9999px, 80px, 0);
+    }
+    100% {
+        clip: rect(10px, 9999px, 40px, 0);
+    }
+}
+
+@keyframes glitchAfter {
+    0% {
+        clip: rect(70px, 9999px, 100px, 0);
+    }
+    50% {
+        clip: rect(40px, 9999px, 90px, 0);
+    }
+    100% {
+        clip: rect(70px, 9999px, 100px, 0);
+    }
+}
+
+.subMessage {
+    font-size: 1.5rem;
+    color: #d1d1e9;
+    margin: 20px 0;
+}
+
+.homeLink {
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(90deg, #8340ff, #6c63ff);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.homeLink:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #6c63ff, #8340ff);
+}
