@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bde8a7e8-36b8-4ca9-bb6f-ce3e17dee140" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/assets/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/modules/About.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/assets/sunset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/modules/Login.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/modules/Register.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/HomePage/homepage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/HomePage/homepage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modules/TODO/TODO.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/TODO/TODO.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pricing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/modules/About.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modules/About.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +53,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/about-page&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/login-page&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Michal/Desktop/test/test/src/styles/assets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -65,8 +69,8 @@
       <recent name="C:\Users\Michal\Desktop\test\test\src\components\Home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Michal\Desktop\test\test\src\styles\modules" />
       <recent name="C:\Users\Michal\Desktop\test\test\src\pages" />
+      <recent name="C:\Users\Michal\Desktop\test\test\src\styles\modules" />
       <recent name="C:\Users\Michal\Desktop\test\test\src\styles\assets" />
       <recent name="C:\Users\Michal\Desktop\test\test\src\pages\Learn" />
       <recent name="C:\Users\Michal\Desktop\test\test\src\styles\modules\Learn" />
@@ -87,7 +91,8 @@
       <workItem from="1736723687218" duration="595000" />
       <workItem from="1736797304408" duration="3102000" />
       <workItem from="1736806005737" duration="3824000" />
-      <workItem from="1736879341981" duration="1879000" />
+      <workItem from="1736879341981" duration="4493000" />
+      <workItem from="1736888996065" duration="1563000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />

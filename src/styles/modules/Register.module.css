@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6c63ff, #d4d1f5);
+}
+
+.card {
+    display: flex;
+    width: 1200px; /* Increased width */
+    height: 700px; /* Increased height */
+    border-radius: 20px; /* Slightly larger rounding for better visuals */
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+}
+
+.leftSection {
+    flex: 1;
+    position: relative;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightSection {
+    flex: 1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px; /* Increased padding for better spacing */
+}
+
+.formContainer {
+    text-align: center;
+    width: 100%;
+    max-width: 350px; /* Slightly wider form */
+}
+
+.logo {
+    width: 60px; /* Larger logo */
+}
+
+h1 {
+    font-size: 3rem; /* Larger headline */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.welcome {
+    color: #6c63ff;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* More spacing between inputs */
+}
+
+.inputField {
+    width: 100%;
+    padding: 20px; /* Larger input fields */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.1rem; /* Increased font size */
+    transition: border-color 0.3s;
+}
+
+.inputField:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+.registerButton {
+    width: 113%;
+    padding: 20px; /* Larger button */
+    background: linear-gradient(90deg, #6c63ff, #8340ff);
+    color: white;
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registerButton:hover {
+    background-color: #4e54c8;
+}
+
+.loginLink {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1rem;
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.loginLink:hover {
+    text-decoration: underline;
+}
