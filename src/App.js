@@ -4,9 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import './styles/globals.css';
 import TodoApp from "./pages/TODO/TodoApp";
-import Pricing from "./components/Pricing";
-import Contact from "./components/Contact";
-import About from "./components/About";
+import Pricing from "./pages/Pricing";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
     return (
@@ -15,6 +17,8 @@ function App() {
                 <Navbar />
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/register" element={<Register />} />
                         <Route path="/pricing" element={<Pricing />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/todo" element={<TodoApp />} />

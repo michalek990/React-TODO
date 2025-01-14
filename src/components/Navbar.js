@@ -18,8 +18,8 @@ function Navbar() {
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
             <div className={styles.navActions}>
-                <button className={styles.signIn}>Sign in</button>
-                <button className={styles.getStarted}>Get started free</button>
+                <Link className={styles.signIn} to="/login">Sign in</Link>
+                <Link className={styles.getStarted} to="/register">Get started free</Link>
             </div>
         </nav>
     );
