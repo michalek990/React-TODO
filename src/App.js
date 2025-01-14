@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import NotFoundPage from "./pages/NotFound";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                         <Route path="/about" element={<About />} />
                         <Route path="/todo" element={<TodoApp />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="*" element={<NotFoundPage />} />
                     </Routes>
                 <Footer />
             </div>
