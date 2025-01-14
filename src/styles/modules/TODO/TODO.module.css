@@ -1,7 +1,7 @@
 /* Główne kontener */
 .todoAppContainer {
     padding: 30px;
-    max-width: 1200px;
+    max-width: 80%;
     width: 100%;
     margin: 0 auto;
     background-color: #f9f9f9; /* Subtelne tło */

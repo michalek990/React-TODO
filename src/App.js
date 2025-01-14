@@ -6,6 +6,7 @@ import './styles/globals.css';
 import TodoApp from "./pages/TODO/TodoApp";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
+import About from "./components/About";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/pricing" element={<Pricing />} />
+                        <Route path="/about" element={<About />} />
                         <Route path="/todo" element={<TodoApp />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>

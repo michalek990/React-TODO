@@ -12,7 +12,7 @@ function Navbar() {
                 <span className={styles.logoText}>React Learning Center</span>
             </Link>
             <ul className={styles.navLinks}>
-                <li><Link to="/todo">About</Link></li>
+                <li><Link to="/about">About</Link></li>
                 <li><Link to="/pricing">Pricing</Link></li>
                 <li><Link to="/todo">TODO</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
